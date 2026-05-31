@@ -14,8 +14,7 @@ public class Sensor {
     public Sensor() {
     }
 
-    public Sensor(Long id, String nome, String descricao) {
-        this.id = id;
+    public Sensor(String nome, String descricao) {
         this.nome = nome;
         this.descricao = descricao;
     }
