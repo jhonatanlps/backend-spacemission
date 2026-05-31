@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "Sistemas")
+@Table(name = "sistemas")
 public class Sistemas {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,7 +16,6 @@ public class Sistemas {
     private Boolean status;
     @OneToMany(mappedBy = "evento", cascade = CascadeType.ALL)
     private List<Sensor> sensores;
-
 
     public Sistemas() {
     }
