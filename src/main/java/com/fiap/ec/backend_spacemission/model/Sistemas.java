@@ -15,12 +15,12 @@ public class Sistemas {
     private String descricao;
     private Boolean status;
     @OneToMany(mappedBy = "evento", cascade = CascadeType.ALL)
-    private List<Sensor> sensores;
+    private List<SistemasSensor> sensores;
 
     public Sistemas() {
     }
 
-    public Sistemas(String nome, String descricao, Boolean status, List<Sensor> sensores) {
+    public Sistemas(String nome, String descricao, Boolean status, List<SistemasSensor> sensores) {
         this.nome = nome;
         this.descricao = descricao;
         this.status = status;
@@ -55,11 +55,11 @@ public class Sistemas {
         this.status = status;
     }
 
-    public List<Sensor> getSensores() {
+    public List<SistemasSensor> getSensores() {
         return sensores;
     }
 
-    public void setSensores(List<Sensor> sensores) {
+    public void setSensores(List<SistemasSensor> sensores) {
         this.sensores = sensores;
     }
 }
