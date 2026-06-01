@@ -14,7 +14,7 @@ public class Sistemas {
     private String nome;
     private String descricao;
     private Boolean status;
-    @OneToMany(mappedBy = "evento", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "sistemas", cascade = CascadeType.ALL)
     private List<SistemasSensor> sensores;
 
     public Sistemas() {
