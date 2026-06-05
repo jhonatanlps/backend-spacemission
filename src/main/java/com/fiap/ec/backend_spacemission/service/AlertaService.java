@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 public class AlertaService {
-    private AlertaRepository repository;
+    private final AlertaRepository repository;
 
     public AlertaService(AlertaRepository repository) {
         this.repository = repository;

@@ -1,5 +1,6 @@
 package com.fiap.ec.backend_spacemission.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -13,6 +14,7 @@ public class SistemasSensor {
 
     @ManyToOne
     @JoinColumn(name = "sistemas_id")
+    @JsonIgnore
     private Sistemas sistemas;
 
     @ManyToOne

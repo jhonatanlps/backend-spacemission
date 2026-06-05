@@ -11,12 +11,13 @@ import java.util.List;
 
 @Service
 public class SistemasService {
-    private SistemasRepository sistemasRepository;
+    private final SistemasRepository sistemasRepository;
 
-    private SensorService sensorService;
+    private final SensorService sensorService;
 
-    public SistemasService(SistemasRepository repository) {
+    public SistemasService(SistemasRepository repository, SensorService sensorService) {
         this.sistemasRepository = repository;
+        this.sensorService = sensorService;
     }
 
     public Sistemas salvar(Sistemas sistemas){
