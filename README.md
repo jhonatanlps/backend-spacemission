@@ -1,5 +1,10 @@
 # Backend SpaceMission
 
+Integrantes:
+- Bruno Takaya — RM: 554986
+- Iury Cardoso — RM: 558050
+- Jhonatan Lopes — RM: 559174 
+
 API REST para gerenciamento de sensores, sistemas e alertas usada no projeto SpaceMission.
 
 **Projeto**
@@ -88,9 +93,4 @@ Base: `http://localhost:8080`
 - O banco H2 está configurado para arquivo em `data/consultas` (veja `application.properties`).
 - A aplicação usa `spring.jpa.hibernate.ddl-auto=update`, então o esquema será criado/atualizado automaticamente em execução.
 
-**Contribuição**
-- Abra issues ou envie pull requests com melhorias.
-
-**Licença**
-- (Adicionar informação de licença, se aplicável)
 
